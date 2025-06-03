@@ -554,16 +554,21 @@ export default function VideoPage() {
                   <Avatar className="w-8 h-8">
                     <AvatarImage
                       src={
-                        comment?.ownerDetails?.[0]?.avatar ?? "/placeholder.svg"
+                        comment.ownerDetails?.[0]?.avatar ?? "/placeholder.svg"
+                      }
+                      alt={
+                        comment.ownerDetails?.[0]?.username
+                          ? `${comment.ownerDetails[0].username}'s avatar`
+                          : "User avatar"
                       }
                     />
-
                     <AvatarFallback>
-                      {comment?.ownerDetails?.[0]?.username
-                        ? comment.ownerDetails?.[0].username[0].toUpperCase()
-                        : "Undefined User"}
+                      {comment.ownerDetails?.[0]?.username
+                        ? comment.ownerDetails[0].username[0].toUpperCase()
+                        : "U"}
                     </AvatarFallback>
                   </Avatar>
+
                   <div className="flex-1">
                     <div className="flex items-center space-x-2 mb-1">
                       <span className="font-medium text-sm">
