@@ -1,7 +1,6 @@
 /** @format */
 
-const API_BASE_URL =
-  "https://social-media-app-backend-blond.vercel.app/api/v1";
+const API_BASE_URL = "https://socialmediaapp-backend-1.onrender.com/api/v1";
 
 class ApiService {
   private getAuthHeaders() {
