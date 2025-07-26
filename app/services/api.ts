@@ -1,6 +1,6 @@
 /** @format */
 
-const API_BASE_URL = "https://socialmediaapp-backend-g85d.onrender.com/api/v1";
+const API_BASE_URL = "https://socialmediaapp-backend-1.onrender.com/api/v1";
 
 class ApiService {
   private getAuthHeaders() {
